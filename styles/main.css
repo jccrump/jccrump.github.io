@@ -204,6 +204,9 @@ footer{
     max-width: 1200px;
     width: 100%;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .partner-pics{
     background-color: white;
@@ -360,7 +363,6 @@ footer{
     border: 5px solid white;
 
 }
-
 @media only screen and (max-width: 800px){
     .form-wrapper{
         flex-direction: column;
@@ -389,10 +391,22 @@ footer{
         max-height: 100%;
         height: 200px;
     }
+    .need-help-bar .container{
+        flex-direction: column;
+        justify-content: center;
+    }
     .main-img{
         height: auto;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    .review-holder{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .review-card{
+        margin-right: 0px;
     }
     .map-container{
         flex-direction: column;
