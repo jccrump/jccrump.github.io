@@ -136,7 +136,7 @@ header{
     padding: 20px;
 
 }
-.front-form input, .front-form select{
+.front-form input, .front-form select, .front-form textarea{
     padding: 15px;
     width: 100%;
     margin-bottom: 10px;
@@ -194,17 +194,6 @@ header{
     font-size: 20px;
     text-align: center;
 }
-footer{
-    width:100%;
-    max-width: 100%;
-    height: 100px;
-    background-color: #333333
-}
-.footer-container{
-    max-width: 1200px;
-    width: 100%;
-    color: white;
-}
 .partner-pics{
     background-color: white;
     width:100%;
@@ -258,8 +247,7 @@ footer{
     max-width: 280px;
     width: 100%;
     background-color: white;
-    height: 10
-    0px;
+    height: 100px;
     color: black;
     border-radius: 5px;
     padding: 15px;
@@ -360,8 +348,32 @@ footer{
     border: 5px solid white;
 
 }
-
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    max-width: 100%;
+    height: 100px;
+    background-color: #333333
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width: 800px){
+    .need-help-bar .container{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
     .form-wrapper{
         flex-direction: column;
         text-align: center;
@@ -393,6 +405,13 @@ footer{
         height: auto;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    .review-holder{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .review-card{
+        margin-right: 0px;
     }
     .map-container{
         flex-direction: column;

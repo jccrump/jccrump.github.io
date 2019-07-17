@@ -15,10 +15,10 @@
                 <div class="nav-logo"><a href="/"><img width="150px" src="/images/logo.png"></a></div>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,18 +40,12 @@
                         <p>Superior products and superior installation to protect your family!</p>
                     </div>
                     <div class="submit-form">
-                        <form class="front-form">
+                        <form class="front-form" method="POST" action="https://formspree.io/justinc.crump@gmail.com">
                             <h4>Please fill out the form below to be contacted by one of our expert team members.</h4>
-                            <input type="text" placeholder="First Name *" required>
-                            <input type="text" placeholder="Last Name *" required>
-                            <input type="tel" placeholder="Phone *" required>
-                            <input type="email" placeholder="Email *" required>
-                            <select>
-                                <option>Roof Inspection</option>
-                                <option>Roof Repair</option>
-                                <option>Warranty Question</option>
-                                <option>Other</option>
-                            </select>
+                            <input name="Name" type="text" placeholder="Name *" required>
+                            <input name="Phone #" type="tel" placeholder="Phone *" required>
+                            <input name="Email" type="email" placeholder="Email *" required>
+                            <textarea name="Details" placeholder="Details..."></textarea>
                             <button type="submit">SCHEDULE INSPECTION NOW!</button>
                         </form>
                     </div>
@@ -164,7 +158,9 @@
     </main>
     <footer>
         <div class="footer-container">
-            Footer
+            <div class="footer-col">1</div>
+            <div class="footer-col">2</div>
+            <div class="footer-col">3</div>
         </div>
     </footer>
 </body>
