@@ -8,7 +8,7 @@ body{
     background-color: #eee;
     padding: 0px;
     margin: 0px;
-    font-family: "Titillium Web"
+    font-family: "Titillium Web";
 }
 main{
     margin-bottom: 50px;
@@ -194,23 +194,6 @@ header{
     font-size: 20px;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
-footer{
-    width:100%;
-    max-width: 100%;
-    height: 100px;
-    background-color: #333333
-}
-.footer-container{
-    max-width: 1200px;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
->>>>>>> 38869902bd8273c3bd3ae59bf6af220efd1b9965
 .partner-pics{
     background-color: white;
     width:100%;
@@ -366,13 +349,11 @@ footer{
 
 }
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    z-index: 4;
     width:100%;
     max-width: 100%;
     height: 100px;
-    background-color: #333333
+    background-color: #333333;
 }
 .footer-container{
     max-width: 1200px;
@@ -383,6 +364,24 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.about-wrapper{
+    height: 80vh;
+    margin-top: 150px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-title{
+    font-size: 4em;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+.about-body{
+    font-size: 18px;
+    line-height: 2;
 }
 @media only screen and (max-width: 800px){
     .need-help-bar .container{
@@ -430,10 +429,6 @@ footer{
     .review-holder{
         flex-direction: column;
         justify-content: center;
-<<<<<<< HEAD
-=======
-        
->>>>>>> 38869902bd8273c3bd3ae59bf6af220efd1b9965
     }
     .review-card{
         margin-right: 0px;
