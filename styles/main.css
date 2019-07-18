@@ -47,6 +47,9 @@ header{
 .nav-links ul li a:hover{
     color: blue;
 }
+.mobile-nav{
+    display: none;
+}
 .need-help-bar{
     width: 100%;
     max-width: 100%;
@@ -96,7 +99,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 60vh;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +109,8 @@ header{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 80%;
     max-width: 1200px;
     border: 1px solid white;
@@ -129,6 +134,7 @@ header{
 .submit-form{
     width: 100%;
     max-width: 400px;
+    height: 100%;
     background-color: rgba(255, 255, 255, .8)
 }
 .front-form{
@@ -234,6 +240,13 @@ header{
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
+    text-align: center;
+}
+.read-more{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 .review-holder{
     display: flex;
@@ -249,7 +262,6 @@ header{
     max-width: 280px;
     width: 100%;
     background-color: white;
-    height: 100px;
     color: black;
     border-radius: 5px;
     padding: 15px;
@@ -268,15 +280,18 @@ header{
 }
 .map-img{
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-height: 800px;
+    padding: 10px 0px;
     background-color: blue;
-    padding: 10px;
-    padding-left: 0px;
 }
 .map-img img{
-    width: 100%;
-    max-height: 800px;
+    width: 95%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .map-button{
     background-color: blue;
@@ -323,8 +338,6 @@ header{
     padding: 30px;
     max-width: 30%;
     width: 100%;
-    max-height: 250px;
-    height: 40vh;
     background-color: white;
     margin: 100px 0;
     margin-right: -80px;
@@ -418,7 +431,7 @@ footer{
     text-align: center;
 }
 .contact-wrapper{
-    min-height: 80vh;
+    min-height: 70vh;
     margin-top: 150px;
     max-width: 1200px;
     width: 100%;
@@ -433,26 +446,100 @@ footer{
     font-size: 3.5em;
     text-align: center;
     font-weight: 600;
+    margin-bottom: 20px;
     width: 100%;
 }
 .contact-body{
     background-color: white;
-    padding: 20px;
     max-width: 1000px;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+input[type=text], input[type=tel], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    border: 0px;
+    color: white;
+    font-weight: 600;
+}
+.contact-form{
+    padding: 20px;
+}
 @media only screen and (max-width: 800px){
+    .menu-toggle{
+        display: block;
+        height: 40px;
+        width: 40px;
+        float: right;
+        cursor: pointer;
+        color: blue;
+        font-size: 25px;
+        text-align: center;
+    }
+    .menu-toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before{
+        content: '\f00d'
+    }
+    .nav-links{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.19);
+        width: 100%;
+    }
+    .mobile-nav ul{
+        list-style:none;
+        padding: 0px;
+    }
+    .mobile-nav ul li{
+        border: 1px solid black;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+    .mobile-nav ul li a{
+        color: black;
+        width: 100%;
+        text-decoration: none;
+    }
+    .mobile-nav.active{
+        display: block;
+        z-index: 10;
+
+    }
     .need-help-bar .container{
         flex-direction: column;
         justify-content: center;
         padding-left: 0px;
         padding-bottom: 10px;
     }
+    .main-img{
+        max-height: none;
+    }
     .form-wrapper{
         flex-direction: column;
         text-align: center;
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
     .submit-form{
         max-width: 100%;

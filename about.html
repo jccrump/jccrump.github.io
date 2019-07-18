@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144120968-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144120968-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" href="/images/fav.jpg">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <title>Basic Responsive Webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Nimbus Roofing - About Us</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo"><a href="/"><img width="150px" src="/images/logo.png"></a></div>
+                <div class="menu-toggle"></div>
                 <div class="nav-links">
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -22,11 +35,19 @@
                     </ul>
                 </div>
             </div>
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
         <div class="need-help-bar">
             <div class="container">
                 <p><strong>Is your roof damaged?</strong> - Get an inspection today</p>
-                <a href="#">GET STARTED</a>
+                <a href="/contact.html">GET STARTED</a>
             </div>
         </div>
     </header>
@@ -61,7 +82,7 @@
             <div class="footer-col">
                 <h4>Sitemap</h4>
                 <div>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                     <a href="/about.html">About Us</a>
                     <a href="/blog/">Blog</a>
                     <a href="/contact.html">Contact Us</a>
@@ -83,4 +104,14 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="/scripts/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active')
+            $('.mobile-nav').toggleClass('active')
+        })
+    })
+</script>
 </html>

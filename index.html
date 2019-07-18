@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144120968-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144120968-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" href="/images/fav.jpg">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <title>Basic Responsive Webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Nimbus Roofing</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo"><a href="/"><img width="150px" src="/images/logo.png"></a></div>
+                <div class="menu-toggle"></div>
                 <div class="nav-links">
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -21,6 +35,14 @@
                         <li><a href="/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
         <div class="need-help-bar">
@@ -40,7 +62,7 @@
                         <p>Superior products and superior installation to protect your family!</p>
                     </div>
                     <div class="submit-form">
-                        <form class="front-form" method="POST" action="https://formspree.io/justinc.crump@gmail.com">
+                        <form class="front-form" method="POST" action="https://formspree.io/info@nimbusroofing.com">
                             <h4>Please fill out the form below to be contacted by one of our expert team members.</h4>
                             <input name="Name" type="text" placeholder="Name *" required>
                             <input name="Phone #" type="tel" placeholder="Phone *" required>
@@ -101,31 +123,25 @@
                     <div class="section-title">SEE WHY PEOPLE CHOOSE NIMBUS ROOFING</div>
                     <div class="review-holder">
                         <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
+                            Dustin and his team is the best company that I've ever dealt with.  Dustin managed the whole process, even dealing with the insurance company and the adjusters when they came to my house.  He is very easy to deal with, very personable, and extremely knowledgeable in all things in his field.<br><b>- Glenn D.</b>
                         </div>
                         <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
+                            First experience with a roofer/GC.  After getting a referral for Nimbus roofing I was not disappointed.  They did an excellent job on our roof and quickly too.<br><b>- Eddie C.</b>
                         </div>
                         <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
+                            I loved working with Chris from Nimbus. He really helped me feel comfortable with my decisions and explain the process to be at every step. Would definitely recommend to everyone I know.<br><b>- Roy B.</b>
                         </div>
                         <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
+                            So happy with the black roof and new gutters we had installed. Dustin Moore was quick to answer phone calls and emails about any questions we had.<br><b>- Aimee M.</b>
                         </div>
                         <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
+                            I have referred several families to Dustin at Nimbus Roofing, he’s thorough and knowledgeable, and prides himself on details of every project. All have been pleased with his service and quality of work!<br><b>- Candice H.</b>
                         </div>
                         <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
+                            I have had the pleasure of meeting both Dustin and Chris and I must say they make a very good impression! They are both so friendly and fun to talk to.<br><b>- Dixie H.</b>
                         </div>
-                        <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
-                        </div>
-                        <div class="review-card">
-                            Everything I was hoping for: I highly recommend Dustin: very experienced in the field , knows the ins and outs of the business.
-                        </div>
-
                     </div>
+                    <a class="read-more" href="https://www.google.com/search?source=hp&ei=WIIwXcf3OcnLtQbcw5zIDQ&q=nimbus+roofing&oq=nimbus+roofing&gs_l=psy-ab.3..35i39j38.1635.3425..3559...0.0..0.402.1594.12j2j4-1....2..0....1..gws-wiz.....0..0i131j0j0i20i263j0i22i30.Cj4dZkYdWBo&ved=0ahUKEwjHg8eH177jAhXJZc0KHdwhB9kQ4dUDCAc&uact=5#lrd=0x864c3d5a230595df:0x2526e934e047cc06,1,,," target="_blank">Read More</a>
                 </div>
             </div>
         </section>
@@ -137,8 +153,9 @@
                 <div class="map-desc">
                     <h3>Serving the Dallas Metroplex</h3>
                     <p>Check to see if we service your area by entering your zip code.</p>
-                    <input type="text" placeholder="Zip Code *">
-                    <button class="map-button">CHECK NOW</button>
+                    <p id="zip-result"></p>
+                    <input type="number" placeholder="Zip Code" id="zipcode">
+                    <button onclick="searchZips()" class="map-button">CHECK NOW</button>
                 </div>
             </div>
             <div class="owners-container">
@@ -148,11 +165,11 @@
                     <img src="/images/chris.jpg">
                 </div>
                 <div class="owners-desc">
-                        <h3>Meet the Team</h3>
-                        <p>
-                            Nimbus Roofing started because we have a vast knowledge in the industry and saw a gap in the market. Roofing contractors these days tend to chase the market or chase the storm and often times forget that they are dealing with real people and real families. At Nimbus Roofing, we always remember that we are here to help in a time of need when you have sustained damage to quite possibly your biggest asset.
-                        </p>
-                    </div>
+                    <h3>Meet the Team</h3>
+                    <p>
+                        Nimbus Roofing started because we have a vast knowledge in the industry and saw a gap in the market. Roofing contractors these days tend to chase the market or chase the storm and often times forget that they are dealing with real people and real families. At Nimbus Roofing, we always remember that we are here to help in a time of need when you have sustained damage to quite possibly your biggest asset.
+                    </p>
+                </div>  
             </div>
         </section>
     </main>
@@ -183,4 +200,14 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="/scripts/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active')
+            $('.mobile-nav').toggleClass('active')
+        })
+    })
+</script>
 </html>
