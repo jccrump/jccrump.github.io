@@ -26,8 +26,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col">
-                <h5>Calculator</h5>
-                <select id='calcSelection' class="form-select" onchange="changeselection(this.value)">
+                <h5>Select Product Type:</h5>
+                <select class="form-select" onchange="changeselection(this.value)">
                     <option>Chopped Stone</option>
                     <option>Flagstone</option>
                     <option>Grass</option>
@@ -201,15 +201,7 @@
         </div>
     </div>
     <script>
-        
-        let selectionSort = () => {
-            if(document.getElementById('selectionKey').value == 'riverrock'){
-                document.getElementById('calcSelection').value == 'River Rock'
-            } else {
-                document.getElementById('calcSelection').value == 'Wrong'
-            }
-        }
-        selectionSort()
+
         let changeselection = (e) => {
             if(e == "Flagstone") {
                 document.getElementById('flaglength').value = ''
